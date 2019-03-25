@@ -25,6 +25,7 @@ dependencies:
 - megaparsec
 - parser-combinators
 - transformers
+- hspec
 
 library:
   source-dirs: src
@@ -39,8 +40,6 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - calculator
-    - text
-    - megaparsec
 
 tests:
   calculator-test:
@@ -52,3 +51,4 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - calculator
+
